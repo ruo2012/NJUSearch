@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="./css/iswap.js"></script>
+    <script type="text/javascript">
+    //设定手机访问时默认为wap页面
+    uaredirect("./wap.html"); //when use the phone to visit,visit the 'wap.html'
+    </script>
+    <title>NJU-Search</title>
+    <link rel="stylesheet" href="./css/home.css" type="text/css" />
+    <script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body style="zoom: 1;">
+    <div id="wrap">
+        <div id="top">
+            <span class="fl"></span>
+            <span class="fr">
+                <a href="#">搜索导航</a> &nbsp;
+                <a href="http://nova.nju.edu.cn:88/" target="_blank">NOVA</a> 
+            </span>
+        </div>
+        <div class="homelogo png">
+            <h1>NJU_搜索</h1>
+        </div>
+        <!-- 搜索框 -->
+        <div class="searchbox">
+            <form name="f1" action="./resultshow.php" onsubmit="return check();" id="myform">
+                <input align="middle" name="key" class="q" id="keyword" value="请输入关键字搜索网页" onfocus="javascript:if(this.value=='请输入关键字搜索网页'){this.value='';this.style.color='#333';this.style.borderColor='#3387ff';}" onblur="javascript:if(this.value==''){this.value='请输入关键字搜索网页';this.style.color='#CCC';this.style.borderColor='#CFC7C8';}" maxlength="100" size="50" autocomplete="off" baidusug="1" x-webkit-speech="">
+                <input name="i" type="hidden" value="0">
+                <input id="btn" class="btn" align="middle" value="马上搜索" type="submit">
+            </form>
+        </div>
+        <div style="margin:30px auto 10px auto; text-align:center;"></div>
+        <!-- 右上角导航 -->
+        <div class="links">
+            <a style="font-size:15px;color: #63065F" href="#" title="热门搜索"></a>
+            <a style="font-size:15px;color: #63065F" href="#" title="搜索导航"></a>
+        </div>
+        <!--页面底部-版权信息-->
+        <div id="footerbox">
+            <div class="footer2">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Copyright © 2015-2016
+                <a href="#"> NJU搜索 </a>
+                <a href="http://nova.nju.edu.cn:88/" target="_blank">NOVA</a>
+            </div>
+            <div class="footer1">刘思达 141270023
+                <br/>王申涛 141270039
+            </div>
+        </div>
+    </div>
+    <div id='zz' style='width:100%;height:100%;position: fixed;top:0;left:0;background:rgba(0,0,0,0.5);z-index:999;display:none;'></div>
+</body>
